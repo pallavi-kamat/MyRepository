@@ -1,32 +1,32 @@
 public class RajaMantriChorSipahi extends Activity {
     
 	
-    @Override
-    public void onBackPressed() {
+	@Override
+	public void onbackpressed() {
 		
 
 		
-    }
+	}
 
-    @Override
-    protected void onPostResume() {
-	// TODO Auto-generated method stub
-	super.onPostResume();
-    }
+	@Override
+	protected void onpostresume() {
+		// TODO Auto-generated method stub
+		super.onpostresume();
+	}
 
-    @Override
-    public boolean onKeyDown(int keyCode, KeyEvent event) {
-	AlertDialog dialog = new AlertDialog.Builder(this).create();
-	dialog.setTitle("Exit game!");
-	dialog.setMessage("Are you sure you want to exit the game?");
-	dialog.setButton("Exit", new DialogInterface.OnClickListener() {
+	@Override
+	public boolean onkeydown(int keyCode, KeyEvent event) {
+		AlertDialog dialog = new AlertDialog.Builder(this).create();
+		dialog.setTitle("Exit game!");
+		dialog.setMessage("Are you sure you want to exit the game?");
+		dialog.setButton("Exit", new DialogInterface.OnClickListener() {
 			
-		public void onClick(DialogInterface dialog, int which) {
+			public void onClick(DialogInterface dialog, int which) {
 				
-			finish();
+				finish();
 				
-		}
-	});
+			}
+		});
 		dialog.setButton2("Cancel", new DialogInterface.OnClickListener() {
 			
 			public void onClick(DialogInterface dialog, int which) {
@@ -40,7 +40,7 @@ public class RajaMantriChorSipahi extends Activity {
 	}
 
 	@Override
-	public void onLowMemory() {
+	public void onlowmemory() {
 		AlertDialog dialog = new AlertDialog.Builder(this).create();
 		dialog.setTitle("Low memory!");
 		dialog.setMessage("Too many apps open, kindly close some other apps and try again!");
@@ -80,7 +80,7 @@ public class RajaMantriChorSipahi extends Activity {
 	static String player2 = "";
 	static String player3 = "";
 	static String player4 = "";
-        static int i=0,j=0,k=0,l=0;
+	static int i=0,j=0,k=0,l=0;
 	static int p1score = 0;
 	static int p2score = 0;
 	static int p3score = 0;
@@ -950,7 +950,7 @@ public class RajaMantriChorSipahi extends Activity {
 			
 			btnPod4.setOnClickListener(new OnClickListener() {
 					
-    						public void onClick(View v) {
+					public void onClick(View v) {
 						// TODO Auto-generated method stub
 						player4 = solutionArray[3];
 						btnPod4.setText(player4);
