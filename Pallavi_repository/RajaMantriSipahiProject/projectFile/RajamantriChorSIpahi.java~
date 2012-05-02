@@ -1,4 +1,4 @@
-public class RajaMantri extends Activity {
+public class rajamantri extends Activity {
     
 	
 	@Override
